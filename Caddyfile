@@ -1,0 +1,7 @@
+$CADDY_HOSTNAME {
+        reverse_proxy $CADDY_BACKEND
+
+        tls {
+                dns cloudflare $CADDY_CLOUDFLARE_TOKEN
+        }
+}
