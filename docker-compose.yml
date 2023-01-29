@@ -1,9 +1,7 @@
 version: '3'
 services:
   caddy:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: zbiles/caddy-cloudflare
     container_name: caddy
     restart: always
     ports:
