@@ -11,4 +11,4 @@ services:
     volumes:
       - ./config:/config
       - ./data:/data
-      - $(pwd)/Caddyfile:/etc/caddy/Caddyfile
+      - ./Caddyfile:/etc/caddy/Caddyfile
